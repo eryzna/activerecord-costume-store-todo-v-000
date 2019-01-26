@@ -1,1 +1,14 @@
-# Create your costume_stores migration here
+class CreateCostumeStores
+  def change
+    create_table :costume_stores do |store|
+      store.string :name
+      store.string :location
+      store.integer :costume_inventory
+      store.integer :number_of_employees
+      store.string :still_in_business
+      store.string :opening_time
+      store.string :closing_time
+    end
+  end
+
+end
