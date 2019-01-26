@@ -1,6 +1,11 @@
-class Costume < ActiveRecord::Migration
+class CreateCostume < ActiveRecord::Migration
   def change
-    create_table :costumes
+    create_table :costumes do |costume|
+      costume.string :name
+      costume.string :price
+      costume.string :size
+      costume.string :image_url
+    end
   end
 
 end
